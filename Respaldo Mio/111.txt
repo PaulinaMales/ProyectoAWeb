@@ -1,0 +1,49 @@
+datos MIGRACIONES
+
+/*USUARIOS*/
+INSERT INTO `migraciones`.`users` (`id`, `name`, `email`, `email_verified_at`,
+`password`, `remember_token`) VALUES ('1', 'Ivonne', 'ivonne@hotmail.com',
+'2023-01-01 13:19:25', 'sistemas', 'sistemas');
+INSERT INTO `migraciones`.`users` (`id`, `name`, `email`, `email_verified_at`,
+`password`, `remember_token`) VALUES ('2', 'Edison', 'edison@hotmail.com',
+'2023-01-01 13:19:25', 'sistemas', 'sistemas');
+INSERT INTO `migraciones`.`users` (`id`, `name`, `email`, `email_verified_at`,
+`password`, `remember_token`) VALUES ('3', 'Gaby', 'gaby@hotmail.com',
+'2023-01-01 13:19:25', 'sistemas', 'sistemas');
+/*PEFILES*/
+INSERT INTO `migraciones`.`profiles` (`id`, `nombre`, `biografia`, `github`,
+`website`, `user_id`) VALUES ('1', 'backend', 'soy un backend',
+'https://github.com/', 'https://esfot.epn.edu.ec/', '1');
+INSERT INTO `migraciones`.`profiles` (`id`, `nombre`, `biografia`, `github`,
+`website`, `user_id`) VALUES ('2', 'frontend', 'soy un frontend',
+'https://github.com/', 'https://esfot.epn.edu.ec/', '2');
+INSERT INTO `migraciones`.`profiles` (`id`, `nombre`, `biografia`, `github`,
+`website`, `user_id`) VALUES ('3', 'fullstack', 'soy un fullstack',
+'https://github.com/', 'https://esfot.epn.edu.ec/', '3');
+/*NIVELES*/
+INSERT INTO `migraciones`.`levels` (`id`, `nombre`, `created_at`, `updated_at`) VALUES
+('1', 'oro', '2023-01-01 13:19:25', '2021-11-20 13:19:25');
+INSERT INTO `migraciones`.`levels` (`id`, `nombre`, `created_at`, `updated_at`) VALUES
+('2', 'plata', '2023-01-01 13:19:25', '2021-11-20 13:19:25');
+INSERT INTO `migraciones`.`levels` (`id`, `nombre`, `created_at`, `updated_at`) VALUES
+('3', 'bronce', '2023-01-01 13:19:25', '2021-11-20 13:19:25');
+/*POSTS*/
+INSERT INTO `migraciones`.`posts` (`id`, `nombre`, `category_id`, `user_id`, `created_at`,
+`updated_at`) VALUES ('1', 'el desarrollo de laravel', '1', '1', '2021-10-11 00:00:00', '2021-
+10-11 00:00:00');
+INSERT INTO `migraciones`.`posts` (`id`, `nombre`, `category_id`, `user_id`, `created_at`,
+`updated_at`) VALUES ('2', 'el desarrollo de nodejs', '1', '1', '2021-10-11 00:00:00', '2021-
+10-11 00:00:00');
+INSERT INTO `migraciones`.`posts` (`id`, `nombre`, `category_id`, `user_id`, `created_at`,
+`updated_at`) VALUES ('3', 'el desarrollo de React', '2', '2', '2021-10-11 00:00:00', '2021-10-
+11 00:00:00');
+INSERT INTO `migraciones`.`posts` (`id`, `nombre`, `category_id`, `user_id`, `created_at`,
+`updated_at`) VALUES ('4', 'el desarrollo de Angular', '2', '2', '2021-10-11 00:00:00', '2021-
+10-11 00:00:00');
+INSERT INTO `migraciones`.`posts` (`id`, `nombre`, `category_id`, `user_id`, `created_at`,
+`updated_at`) VALUES ('5', 'La arquitectura de una PC', '5', '3', '2021-10-11 00:00:00',
+'2021-10-11 00:00:00');
+INSERT INTO `migraciones`.`posts` (`id`, `nombre`, `category_id`, `user_id`, `created_at`,
+`updated_at`) VALUES ('6', 'La arquitectura de una Laptop', '5', '3', '2021-10-11 00:00:00',
+'2021-10-11 00:00:00');
+

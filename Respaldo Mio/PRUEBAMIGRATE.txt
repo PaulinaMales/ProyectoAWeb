@@ -1,0 +1,26 @@
+1]9)}6Zy9leNr9(J 
+contraseña ase de datos
+
+id20136737_maritozzo
+
+id20136737_maritozzo
+
+id20136737_maritozzo
+
+
+$this-> app-> bind('path.public', function(){ return base_path('public_html');});
+
+
+pgsql
+DB_CONNECTION=pgsql
+DB_HOST=
+DB_PORT=5432
+DB_DATABASE=maritozzo
+DB_USERNAME=maritozzo
+DB_PASSWORD=hBGRdNVJOPtmmvyqhEzXGkvmzGrJNoEj
+
+
+MIX_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
+MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"}
+
+NIXPACKS_BUILD_CMD= composer install && yarn && yarn prod && php artisan optimize && php artisan config:cache && php artisan route:cache && php artisan view:cache && php artisan migrate --force

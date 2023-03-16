@@ -1,0 +1,60 @@
+x_train=train_data
+x_test=test_data
+y_train=train_class
+y_test=test_class
+
+
+x=data.iloc[:,1:] #caracteristicas, algoritmo de aprendizaje?
+y=data["etiqueta"] #etiqueta, objetivo a predecir. CLASES
+
+
+
+k-NN
+import matplotlib.pyplot as plt
+from sklearn import datasets
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.model_selection import train_test_split
+
+# Cargamos el conjunto de datos Iris
+#iris = datasets.load_iris()
+#X = data.data
+#y = iris.target
+
+X = data.iloc[:, :-1].values #caracteristicas
+y = data.iloc[:, -1].values #etiqueta
+
+
+# Dividimos los datos en conjunto de entrenamiento y de prueba
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
+
+# Entrenamos el algoritmo k-NN con 3 vecinos
+knn = KNeighborsClassifier(n_neighbors=15)
+knn.fit(X_train, y_train)
+
+# Realizamos las predicciones en el conjunto de prueba
+y_pred = knn.predict(X_test)
+
+# Visualizamos los resultados en un gráfico de dispersión
+colors = ['red', 'blue']
+for class_value, color in enumerate(colors):
+    row_ix = np.where(y_test == class_value)
+    plt.scatter(X_test[row_ix, 0], X_test[row_ix, 1], color=color, label=class_value)
+
+plt.xlabel('Feature 1')
+plt.ylabel('Feature 2')
+plt.legend()
+plt.show()
+
+
+
+# Imports needed for the script
+import numpy as np
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+#Librería para crear modelo
+from sklearn import tree
+from sklearn.metrics import accuracy_score
+from sklearn.metrics import classification_report
+from subprocess import check_call

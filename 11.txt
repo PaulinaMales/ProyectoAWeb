@@ -1,0 +1,121 @@
+
+
+<div class="container-fluid h-custom">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-9 col-lg-6 col-xl-5">
+            <img src="{{ asset('images/logo-web.png') }}" class="img-fluid" alt="Sample image">
+        </div>
+        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+            <!-- FORMULARIO -->
+            <form method="POST" action="{{ route('login') }}">
+                @csrf
+
+                <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+                    <p class="lead fw-normal mb-0 me-3">Sign in with</p>
+                    <button type="button" class="btn btn-danger btn-floating mx-1">
+                        <i class="fa fa-facebook-f"></i>
+                    </button>
+
+                    <button type="button" class="btn btn-danger btn-floating mx-1">
+                        <i class="fa fa-twitter"></i>
+                    </button>
+
+                    <button type="button" class="btn btn-danger btn-floating mx-1">
+                        <i class="fa fa-linkedin"></i>
+                    </button>
+                </div>
+
+                <div class="divider d-flex align-items-center my-4">
+                    <p class="text-center fw-bold mx-3 mb-0">Or</p>
+                </div>
+
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                    <input type="email" name="email" id="form3Example3" class="form-control form-control-lg @error('email') is-invalid @enderror" value="{{ old('email') }}" required autofocus placeholder="Enter a valid email address" />
+                    <label class="form-label" for="form3Example3">Email address</label>
+                    @error('email')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                    @enderror
+                </div>
+
+                <!-- Password input -->
+                <div class="form-outline mb-3">
+                    <input type="password" name="password" id="form3Example4" class="form-control form-control-lg @error('password') is-invalid @enderror" required placeholder="Enter password" />
+                    <label class="form-label" for="form3Example4">Password</label>
+                    @error('password')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                    @enderror
+                </div>
+
+                <!-- Type input -->
+                <div class="form-outline mb-3">
+                    <label for="tipo" class="form-label">{{ __('Type') }}</label>
+                    <select id="tipo" class="form-control" name="tipo" required>
+                        <option value="">Choose...</option>
+                        <option value="admin">Admin</option>
+                        <option value="user">User</option>
+                    </select>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6 offset-md-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+
+                            <label class="form-check-label" for="remember">
+                                {{ __('Remember Me') }}
+                            </label>
+                        </div>
+                    </div>
+                </div
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//INICIO DE SESION TABLA JUGADORES 
+protected function jugadorLogin(Request $request)
+{
+    $credentials = $request->only('email', 'password');
+    if (Auth::attempt($credentials, $request->filled('remember'))) {
+        return redirect()->route('jugador.player');
+    } else {
+        return redirect()->back()->withErrors(['error' => 'Credenciales incorrectas']);
+    }
+}
+
+protected function presidenteLogin(Request $request)
+{
+    $credentials = $request->only('email', 'password');
+    if (Auth::attempt($credentials, $request->filled('remember'))) {
+        return redirect()->route('presidente.president');
+    } else {
+        return redirect()->back()->withErrors(['error' => 'Credenciales incorrectas']);
+    }
+}
+
+    Route::get('/schedule', [App\Http\Controllers\Admin\scheduleController::class, 'index'])->name('admin.schedule');
+    Route::post('/schedule', [App\Http\Controllers\Admin\scheduleController::class, 'index'])->name('admin.schedule');
++++++++++++++++++++++++++++++++++++++++
+
+Route::get('/partidos', function () {
+    return view('partidos');
+})->name('partidos');
+
++++++++++++++++++++++++
+FUNCION ACTUALIZAR PARTIDOS PUBLICACION 
+     /*
+    public function update(Request $request, $id)
+    {
+        $schedule = Schedule::find($id);
+        $schedule->equipo_1 = $request->input('equipo_1');
+        $schedule->equipo_2 = $request->input('equipo_2');
+        $schedule->lugar = $request->input('lugar');
+        $schedule->fecha = $request->input('fecha');
+        $schedule->hora = $request->input('hora');
+        $schedule->save();
+        
+        return redirect()->route('admin.schedule')->with('success', 'Partido actualizado!');
+    }
+    */

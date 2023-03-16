@@ -1,0 +1,166 @@
+/* RUTA PRESIDENTE */
+Route::get('/crudPresident', [App\Http\Controllers\Admin\crudPresident::class, 'index'])->name('admin.crudPresident');
+
+
+Route::get('/formPresident/create', [App\Http\Controllers\Admin\crudPresident::class, 'create'])->name('admin.crudPresident.create');
+Route::post('/formPresident/create', [PresidentController::class, 'store'])->name('president.create');
+
+
+Route::get('/crudPresident', [App\Http\Controllers\Admin\crudPresident::class, 'index'])->name('admin.crudPresident');
+Route::get('/presidente', [App\Http\Controllers\Presidente\PresidentController::class, 'index'])->name('presidente.president');
+Route::post('/presidente', [App\Http\Controllers\Presidente\PresidentController::class, 'index'])->name('presidente.president');
+Route::get('/crudPlayer', [App\Http\Controllers\Presidente\crudPlayer::class, 'index'])->name('presidente.crudPlayer');
+Route::get('/formPlayer/create', [App\Http\Controllers\Presidente\crudPlayer::class, 'create'])->name('presidente.crudPlayer.create');
+Route::post('/formPlayer/create', [JugadorController::class, 'store'])->name('player.create');
+
+
+
+$2y$10$s3.oS6Dml6gNh9nLA0JkIOnNK4hQS6gvJz.RNJyJ1Qdna/QF5kkRq contraseña admin
+
+
+
+composer require intervention/image
+
+
+
+
+
+
+
+***************************************
+
+crudPlayer 
+
+     public function dashboard()
+     {
+         $user = Auth::user();
+         $presidente = Presidente::where('usuario_id', $user->id)->first();
+         $equipo = Equipo::find($presidente->equipo_id);
+         return view('presidente.president', compact('equipo'));
+     }
+
+    public function index()
+    {
+        //
+        return view('presidente.crudPlayer');
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        //
+        $user = Auth::user();
+        $presidente = Presidente::where('usuario_id', $user->id)->first();
+        $equipo = Equipo::find($presidente->equipo_id);
+        return view('presidente.formPlayer',compact('equipo'));
+    }
+*********************************************
+Insertar roles
+INSERT INTO `roles` (`id`, `descripcion`) VALUES ('1', 'Administrador'), ('2', 'Presidente '), ('3', 'Jugador'), ('4', 'Normal');
+Agregar admin
+INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `rol_id`) VALUES ('1', 'Admin', 'admin@gmail.com', NULL, '$2y$10$s3.oS6Dml6gNh9nLA0JkIOnNK4hQS6gvJz.RNJyJ1Qdna/QF5kkRq', NULL, NULL, NULL, '1');
+
+
+equipo_visitante_goles
+
+*************************************************************************
+    public function index(Request $request)
+    {
+        $equipos = Equipo::all();
+        $jugadores = null;
+        $equipo_id = $request->old('equipo_id'); //recupera el valor seleccionado anteriormente
+    
+        if ($request->has('equipo_id')) {
+            $jugadores = Jugador::where('equipo_team', $request->input('equipo_id'))->get();
+        }
+    
+        return view('admin.crudSancion', compact('equipos', 'jugadores', 'equipo_id'));
+    }
+    
+    public function create(Request $request)
+    {
+            $equipos = Equipo::all();
+            $jugadores = null;
+
+            if ($request->has('equipo_id')) {
+                // Busca jugadores asociados al equipo seleccionado
+                $jugadores = Jugador::where('equipo_team', $request->input('equipo_id'))->get();
+            }
+
+            return view('admin.formSancion', compact('equipos', 'jugadores'));
+    }
+
+*******************************************
+                <form action="{{ route('admin.crudSancion.index') }}" method="GET">
+                    <div class="form-group row">
+                        <label for="equipo_id" class="col-sm-2 col-form-label">Selecciona un equipo:</label>
+                        <div class="col-sm-10">
+                            <select name="equipo_id" id="equipo_id" class="form-control">
+                                <option value="">Selecciona un equipo</option>
+                                @foreach($equipos as $equipo)
+                                    <option value="{{ $equipo->id }}">{{ $equipo->nombre }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-10 offset-sm-2">
+                            <button type="submit" class="btn btn-danger">Buscar</button>
+                        </div>
+                    </div>
+                </form>
+
+
+
+
+******************* FORM SANCION
+                <form action="" method="POST">
+
+                    <div class="mb-3">
+                        <label for="equipo" class="form-label">Equipo:</label>
+                        <select id="equipo" name="equipo" class="form-select">
+                            <option value="1">Equipo 1</option>
+                            <option value="2">Equipo 2</option>
+                            <option value="3">Equipo 3</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="jugador" class="form-label">Jugador:</label>
+                        <select id="jugador" name="jugador" class="form-select">
+                            <option value="1">Jugador 1</option>
+                            <option value="2">Jugador 2</option>
+                            <option value="3">Jugador 3</option>
+                        </select>
+                    </div>                   
+                    <div class="mb-3">
+                        <label for="descripcion" class="form-label">Descripción:</label>
+                        <input type="text" id="descripcion" name="descripcion" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="tipo_sancion" class="form-label">Tipo de Sanción:</label>
+                        <select id="tipo_sancion" name="tipo_sancion" class="form-select">
+                            <option value="amarilla">Tarjeta Amarilla</option>
+                            <option value="roja">Tarjeta Roja</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="gravedad_sancion" class="form-label">Gravedad de la Sanción:</label>
+                        <select id="gravedad_sancion" name="gravedad_sancion" class="form-select">
+                            <option value="leve">Leve</option>
+                            <option value="grave">Grave</option>
+                            <option value="muy_grave">Muy Grave</option>
+                            </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="sancion_cumplida" class="form-label">¿La sanción ha sido cumplida?</label>
+                        <input class="form-check-input" type="checkbox" id="sancion_cumplida" value="1" />
+                        <label class="form-check-label" for="inlineCheckbox2">Sí</label>
+                        <input class="form-check-input" type="checkbox" id="sancion_cumplida" value="0" />
+                        <label class="form-check-label" for="inlineCheckbox2">No</label>
+                   </div>
+                   <input type="submit" class="btn btn-danger"  value="Guardar">
+                </form>

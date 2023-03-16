@@ -1,0 +1,87 @@
+Crear relaciones
+Uno A Uno
+1. Creamos el modelo
+2. Añadimos los campos a la tabla del modelo creado
+3. Establecemos las relaciones
+4. Añadimos datos a la tabla
+5. Migramos por php artisan migrate
+6. Verificamos
+
+
+Uno A Muchos
+1. Creamos modelo
+2. Añadir los campos a la tabla del modelo creado
+3. Creamos un modelo para una migracion personalizada
+4. Añadimos los campos a la migracion personalizada
+5. Establecemos las relaciones
+6. Añadimos datos a la tabla
+7. Migramos
+
+
+Muchos A Muchos 
+1. Creamos el modelo
+2. Añadimos los campos a la tabla del modelo creado
+3. Crear migracion personalizada con una tabla intermedia o pivote
+4. Añadimos campos a la tabla pivote
+5. Migramos
+
+6 4 6 6 2 0 
+
+
+
+LABORATORIO 8
+facturas
+INSERT INTO `laboratorio8`.`facturas` (`id`, `numero_factura`, `libro_id`,`created_at`, `updated_at`) VALUES 
+('1', '111', '1','2023-01-01 13:19:25', '2021-11-20 13:19:25');
+INSERT INTO `laboratorio8`.`facturas` (`id`, `numero_factura`,`libro_id`, `created_at`, `updated_at`) VALUES 
+('2', '222','2', '2023-01-01 13:19:25', '2021-11-20 13:19:25');
+
+libros
+INSERT INTO `laboratorio8`.`libros` (`id`, `codigo_libro`, `nombre_autor`,`created_at`, `updated_at`) VALUES 
+('1', '101', 'MARQUEZ','2023-01-01 13:19:25', '2021-11-20 13:19:25');
+INSERT INTO `laboratorio8`.`libros` (`id`, `codigo_libro`,`nombre_autor`, `created_at`, `updated_at`) VALUES 
+('2', '202','ROSARIO', '2023-01-01 13:19:25', '2021-11-20 13:19:25');
+INSERT INTO `laboratorio8`.`libros` (`id`, `codigo_libro`,`nombre_autor`, `created_at`, `updated_at`) VALUES 
+('3', '303','DULCEINA', '2023-01-01 13:19:25', '2021-11-20 13:19:25');
+
+cabecera
+INSERT INTO `laboratorio8`.`cabecera_facs` (`id`, `fecha`, `factura_id`,`created_at`, `updated_at`) VALUES 
+('1', '22-03-2012', '1','2023-01-01 13:19:25', '2021-11-20 13:19:25');
+INSERT INTO `laboratorio8`.`cabecera_facs` (`id`, `fecha`,`factura_id`, `created_at`, `updated_at`) VALUES 
+('2', '12-07-2018','2', '2023-01-01 13:19:25', '2021-11-20 13:19:25');
+INSERT INTO `laboratorio8`.`cabecera_facs` (`id`, `fecha`,`factura_id`, `created_at`, `updated_at`) VALUES 
+('3', '27-11-2019','3', '2023-01-01 13:19:25', '2021-11-20 13:19:25');
+
+ 695076
+tipo libros
+INSERT INTO `laboratorio8`.`tipo_libros` (`id`, `genero`,`created_at`, `updated_at`) VALUES 
+('1', 'Romance','2023-01-01 13:19:25', '2021-11-20 13:19:25');
+INSERT INTO `laboratorio8`.`tipo_libros` (`id`,`genero`, `created_at`, `updated_at`) VALUES 
+('2', 'Comedia', '2023-01-01 13:19:25', '2021-11-20 13:19:25');
+INSERT INTO `laboratorio8`.`tipo_libros` (`id`,`genero`, `created_at`, `updated_at`) VALUES 
+('3', 'Trageria', '2023-01-01 13:19:25', '2021-11-20 13:19:25');
+INSERT INTO `laboratorio8`.`tipo_libros` (`id`,`genero`, `created_at`, `updated_at`) VALUES 
+('4', 'Psicologia', '2023-01-01 13:19:25', '2021-11-20 13:19:25');
+
+autores
+INSERT INTO `laboratorio8`.`autors` (`id`, `nombre`,`created_at`, `updated_at`) VALUES 
+('1', 'Miguel Angel','2023-01-01 13:19:25', '2021-11-20 13:19:25');
+INSERT INTO `laboratorio8`.`autors` (`id`,`nombre`, `created_at`, `updated_at`) VALUES 
+('2', 'Don Quijote', '2023-01-01 13:19:25', '2021-11-20 13:19:25');
+INSERT INTO `laboratorio8`.`autors` (`id`,`nombre`, `created_at`, `updated_at`) VALUES 
+('3', 'Cervantes', '2023-01-01 13:19:25', '2021-11-20 13:19:25');
+
+
+ORDEN
+SELECT * FROM `libros`;
+SELECT * FROM `facturas`;
+SELECT * FROM `tipo_libros`;
+autores
+
+
+SELECT * FROM `autors`;
+SELECT * FROM `facturas`;
+SELECT * FROM `tipo_libros`;
+SELECT * FROM `libros`;
+SELECT * FROM `cabecera_facs`;
+

@@ -1,0 +1,126 @@
+APP_DEBUG=true
+APP_ENV=local
+APP_KEY=base64:BXt0o609ueVTXznglYW2Ve+WWA34heeZ53Yqh3LODbk=
+APP_NAME=Laravel
+APP_URL=mysql://${{ root }}:${{ cOpTMsHPHEzICTkAlkX6 }}@${{ containers-us-west-157.railway.app }}:${{ 7946 }}/${{ railway }}
+AWS_ACCESS_KEY_ID=
+AWS_BUCKET=
+AWS_DEFAULT_REGION=us-east-1
+AWS_SECRET_ACCESS_KEY=
+AWS_USE_PATH_STYLE_ENDPOINT=false
+BROADCAST_DRIVER=log
+
+CACHE_DRIVER=file
+CLOUDINARY_NOTIFICATION_URL=Kise1xZEe-M1Y8f0GNaYh2MKr38
+CLOUDINARY_UPLOAD_PRESET=773969551762516
+CLOUDINARY_URL=cloudinary://773969551762516:Kise1xZEe-M1Y8f0GNaYh2MKr38@dfmhacqha
+DB_CONNECTION=mysql
+DB_DATABASE=railway
+DB_HOST=containers-us-west-157.railway.app
+DB_PASSWORD=cOpTMsHPHEzICTkAlkX6
+DB_PORT=7946
+DB_USERNAME=root
+FILESYSTEM_DISK=local
+LOG_CHANNEL=stack
+LOG_DEPRECATIONS_CHANNEL=null
+LOG_LEVEL=debug
+
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS=null
+MAIL_FROM_NAME=${APP_NAME}
+MAIL_HOST=smtp.gmail.com
+MAIL_MAILER=smtp
+MAIL_PASSWORD=Males2001
+MAIL_PORT=235
+MAIL_USERNAME=elizabeth150301@gmail.com
+
+MEMCACHED_HOST=127.0.0.1
+NIXPACKS_BUILD_CMD=composer install && php artisan optimize && php artisan config:cache && php artisan migrate --force
+PUSHER_APP_CLUSTER=mt1
+PUSHER_APP_ID=
+PUSHER_APP_KEY=
+PUSHER_APP_SECRET=
+PUSHER_HOST=
+PUSHER_PORT=443
+PUSHER_SCHEME=https
+QUEUE_CONNECTION=sync
+REDIS_HOST=127.0.0.1
+REDIS_PASSWORD=null
+REDIS_PORT=6379
+SESSION_DRIVER=file
+SESSION_LIFETIME=120
+VITE_PUSHER_APP_CLUSTER=${PUSHER_APP_CLUSTER}
+VITE_PUSHER_APP_KEY=${PUSHER_APP_KEY}
+VITE_PUSHER_HOST=${PUSHER_HOST}
+VITE_PUSHER_PORT=${PUSHER_PORT}
+VITE_PUSHER_SCHEME=${PUSHER_SCHEME}
+
+
+
+
+
+
+*************************************************************
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class ContactController extends Controller
+{
+    //
+
+    public function send(Request $request){
+
+        $request->validate(
+            
+            [
+                'name'=>'required',
+                'email'=>'required|email',
+                'subject'=>'required',
+                'message'=>'required'
+
+            ]
+            );
+
+
+            if($this->isOnline()){
+               /* $mail_data=[
+
+                    'recipient'=>'elizabeth150301@gmail.com',
+                    'fromEmail'=> $request->email,
+                    'fromName'=>$request->name,
+                    'subject'=>$request->subject,
+                    'body'=>$request->message
+
+
+                ];
+
+                \Mail::send('contactForm',$mail_data, function($message) use ($mail_data)
+                {
+                     $message->to($mail_data['recipient'])
+                             ->from($mail_data['fromEmail'],$mail_data['fromName'])
+                             ->subject($mail_data['subject']);
+
+                });*/
+
+                return redirect()-> back()
+
+                ->with('success', 'Email enviado correctamente.');
+
+            } else{
+                return redirect()-> back()-> withInput()->with('error','Check ypur internet connection!');
+            }
+    }
+
+
+    public function isOnline($site="https://youtube.com/"){
+        if(@fopen($site, "r")){
+            return true;
+
+        } else{
+            return false;
+        }
+    }
+}

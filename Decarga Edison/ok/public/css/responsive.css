@@ -1,0 +1,1021 @@
+@media (min-width: 1400px) {
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             Testimonial part Start
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	.Testimonial-col i {
+		top: 70px;
+		left: 165px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             Testimonial part end
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             team part Start
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             team part end
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             form part Start
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	.map {
+		margin: 0 -20px 0 62px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             form part End
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+}
+
+/*Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                 Banner part Start
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	.fnc-slide__heading-line {
+		font-size: 80px;
+	}
+
+	.fnc-slide__content {
+		left: 39%;
+		top: 24%;
+	}
+
+	.fnc-slide__mask-inner {
+		left: 102%;
+		top: 52%;
+	}
+
+	.fnc-nav__control {
+		width: 98px;
+		height: 50px;
+		font-size: 15px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                 Banner part End
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+				 myself part start
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	.about-text {
+		left: 102%;
+		bottom: -99px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+				 myself part end
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             team part Start
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	.nav-pills .nav-link {
+		padding-bottom: 10px;
+		padding-top: 10px;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-left: 10px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             team part End
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             Testimonial part Start
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	.Testimonial-col img {
+		margin-left: 39%;
+	}
+
+	.Testimonial-col i {
+		left: 122px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             Testimonial part End
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             Blog part Start
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	.blog_text h4 {
+		font-size: 21px;
+	}
+
+	#blog-filter .shop-filter-slide .all-cat ul li a {
+		margin-bottom: 6px;
+	}
+
+	.logo_search form input {
+		width: 63%;
+		height: 50px;
+	}
+
+	.logo_search form button {
+		height: 50px;
+	}
+
+	.cat {
+		--bs-gutter-x: 0.5rem;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             Blog part End
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             office Part start
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	.office-col {
+		padding-bottom: 20px;
+	}
+
+	.office-txt h4 {
+		font-size: 24px;
+	}
+
+	.office-txt p {
+		font-size: 13px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                office Part end
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                  form Part start
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	.map {
+		margin: 0 -20px 0 49px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                  form Part end
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             footer part start
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	.footer-left ul li {
+		line-height: 27px;
+	}
+
+	.foot-img ul li {
+		width: 21.62%;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             footer part End
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+				 Menu part start
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	.main-manu .navbar-brand {
+		width: 200px;
+		height: 70px;
+	}
+
+	.main-manu .navbar-brand img {
+		width: 150px;
+	}
+
+	.main-manu ul li a {
+		color: #f1f1f1;
+		font-size: 13px;
+		font-weight: 400;
+		text-transform: uppercase;
+		padding: 0 10px;
+		line-height: 50px;
+		position: relative;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+				 Menu part End
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             Banner part Start
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	.fnc-slide__heading-line {
+		font-size: 70px;
+	}
+
+	.fnc-slide__mask {
+		right: 59%;
+		top: 15%;
+		width: 41.22vh;
+		height: 47vh;
+	}
+
+	.fnc-slide__mask-inner {
+		left: 106%;
+		top: 52%;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             Banner part End
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+				 matchs part start
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	.team_view .vs {
+		padding: 60px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             matchs part End
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+				 upcoming part start
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	.up_coming .team1 ul li h6 {
+		font-size: 45px;
+	}
+
+	.up_coming .vs {
+		font-size: 89px;
+		padding: 61px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             upcoming part End
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+				 team part start
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	.nav-pills .nav-link {
+		padding-bottom: 10px;
+		padding-top: 10px;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-left: 10px;
+		margin-bottom: 10px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+				 team part end
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+				 Testimonial part start
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	.Testimonial-col img {
+		margin-left: 45%;
+	}
+
+	.Testimonial-col i {
+		top: 70px;
+		left: 307px;
+		font-size: 20px;
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+				 Testimonial part end
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             blog part start
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+	.blog_img {
+		margin-bottom: 50px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             blog part end
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             contact part Start
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	.Contact-box form input {
+		width: 59%;
+		height: 65px;
+	}
+
+	.Contact-box form button {
+		width: 41%;
+		height: 66px;
+	}
+
+	.Contact-box {
+		margin-top: 30px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             contact part End
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             form part start
+   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	#form {
+		padding: 50px 0 27px;
+	}
+
+	#googleMap {
+		width: 100%;
+		height: 400px;
+	}
+
+	.form-title h5 {
+		font-size: 36px;
+		margin-top: 16%;
+		margin-bottom: 15px;
+	}
+
+	.form-col .form-control {
+		padding: 0.375rem 1.75rem;
+	}
+
+	.form-col input {
+		width: 100%;
+		height: calc(2.5em + 0.2rem + 4px);
+	}
+
+	.form-col .form-btn {
+		padding: 8px 29px;
+		margin: 7px 239px;
+	}
+
+	.form-col {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+
+	.map {
+		margin: 0 -20px 40px -15px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+		   form part end
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             office Part start
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	.office-col {
+		padding-bottom: 20px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             office Part end
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+			 common Part start
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	.padding {
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             common Part end
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+				 Menu part start
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	.main-manu {
+		top: 0px;
+		background: #000;
+	}
+
+	.menu-fix {
+		background: #000;
+		padding-top: 1.7rem;
+		padding-bottom: 1.7rem;
+	}
+
+	.main-manu .navbar-brand img {
+		width: 115px;
+	}
+
+	.main-manu .navbar-brand {
+		width: 178px;
+		height: 50px;
+		line-height: 50px;
+	}
+
+	.main-manu button i {
+		color: #fff;
+	}
+
+	.main-manu .navbar-toggler:focus {
+		box-shadow: 0 0 0 0;
+	}
+
+	.main-manu #navbarSupportedContent {
+		background: #f1f1f1;
+		text-align: center;
+		margin-top: 10px;
+	}
+
+	.main-manu ul li a::before {
+		display: none;
+	}
+
+	.main-manu ul li a::after {
+		display: none;
+	}
+
+	.main-manu ul li a {
+		line-height: 35px;
+		color: #000;
+	}
+
+	.btop {
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		font-size: 23px;
+	}
+
+	.common-head img {
+		width: 100%;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+				 Menu part End
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+				 Banner part Start
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	.fnc-slide__content {
+		z-index: 2;
+		position: absolute;
+		left: 6%;
+		top: 24%;
+	}
+
+	.fnc-slide__mask {
+		display: none;
+	}
+
+	.fnc-slide__heading-line {
+		font-size: 80px;
+	}
+
+	.a {
+		padding: 9px 37px;
+		font-size: 17px;
+		margin-left: 170px;
+	}
+
+	.fnc-slide__mask-inner {
+		left: 75%;
+		top: 52%;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+				 Banner part End
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+				 Testimonial part Start
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+	.Testimonial-col {
+		width: 96%;
+	}
+
+	.Testimonial-col i {
+		top: 70px;
+		left: 200px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+			Testimonial part End
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             Gallery part start
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+	.filter_img .img {
+		width: 49.33%;
+		padding: 4px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             Gallery part end
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             team part Start
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	.nav-pills .nav-link {
+		padding-bottom: 10px;
+		padding-top: 10px;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-left: 5px;
+		font-size: 15px;
+		margin-bottom: 5px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             team part End
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                 Blog part Start
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+	.blog_img {
+		margin-bottom: 50px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                 Blog part End
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+				 contact part Start
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	.Contact-box form input {
+		width: 59%;
+		height: 65px;
+	}
+
+	.Contact-box form button {
+		width: 41%;
+		height: 66px;
+	}
+
+	.Contact-box {
+		margin-top: 30px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+				 contact part End
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                  office Part start
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+	.office-col {
+		padding-bottom: 20px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                  office Part end
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                  form Part start
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+	.map {
+		margin: 0 -20px 40px -15px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                  form Part end
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+				 footer part Start
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	.footer-logo {
+		padding: 25px 0;
+	}
+
+	.footer-mid {
+		padding: 15px 0 0 0;
+	}
+
+	.footer-left h4,
+	.footer-left2 h4,
+	.foot-img h4,
+	.foot-last h4 {
+		margin-bottom: 15px;
+	}
+
+	.foot-img ul li {
+		width: 21.95%;
+	}
+
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+				 footer part End
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+			 common Part start
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	.padding {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             common Part end
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             Menu Part Start
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	.main-manu {
+		top: 0px;
+		background: #000;
+	}
+
+	.menu-fix {
+		background: #000;
+		padding-top: 1.7rem;
+		padding-bottom: 1.7rem;
+	}
+
+	.main-manu .navbar-brand img {
+		width: 115px;
+	}
+
+	.main-manu .navbar-brand {
+		width: 180px;
+		height: 50px;
+		line-height: 50px;
+	}
+
+	.main-manu button i {
+		color: #fff;
+	}
+
+	.main-manu .navbar-toggler:focus {
+		box-shadow: 0 0 0 0;
+	}
+
+	.main-manu #navbarSupportedContent {
+		background: #f1f1f1;
+		text-align: center;
+		margin-top: 10px;
+	}
+
+	.main-manu ul li a::before {
+		display: none;
+	}
+
+	.main-manu ul li a::after {
+		display: none;
+	}
+
+	.main-manu ul li a {
+		line-height: 35px;
+		color: #000;
+	}
+
+	.btop {
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		font-size: 23px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             Menu part End
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             Banner part Start
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	.fnc-slide__content {
+		left: 9%;
+		top: 37%;
+	}
+
+	.fnc-slide__heading-line {
+		padding-right: 20px;
+		font-size: 50px;
+		font-weight: 500;
+	}
+
+	.fnc-nav__control {
+		width: 80px;
+	}
+
+	.fnc-slide__inner {
+		height: 100%;
+	}
+
+	.fnc-slide__mask {
+		display: none;
+	}
+
+	.a {
+		padding: 6px 33px;
+		font-size: 16px;
+		margin-left: 40px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             Banner part End
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             breadcrumb part start
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	.breadcrumb-iteam {
+		min-height: 595px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+			   breadcrumb part end
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             matchs part Start
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	.team_view .vs {
+		font-size: 43px;
+		padding: 45px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             matchs part End
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             upcoming part Start
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	.up_coming .vs {
+		padding: 56px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             upcoming part End
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             team part Start
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	.nav-pills .nav-link {
+		padding-bottom: 10px;
+		padding-top: 10px;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-left: 5px;
+		font-size: 15px;
+		margin-bottom: 5px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             team part End
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             Testimonial part Start
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* #Testimonial {
+		padding: 50px 0 74px;
+	} */
+
+	.test-slider .slick-center .Testimonial-col {
+		margin-right: 14px;
+	}
+
+	.Testimonial-col img {
+		margin-left: 36%;
+	}
+
+	.Testimonial-col i {
+		top: 70px;
+		left: 218px;
+		display: none;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             Testimonial part End
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             League_Results part start
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	.mobile_padding_top {
+		margin-top: 15px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             League_Results part End
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             portfolio part start
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* #portfolio {
+		padding: 50px 0 41px;
+	} */
+
+	.filter_img .img {
+		width: 49.33%;
+		padding: 4px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             portfolio part end
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             Plans part start
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* #Plans {
+		padding: 50px 0 50px;
+	} */
+
+	.section-prices {
+		margin-bottom: 50px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             Plans part End
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             Blog part Start
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* #blog {
+		padding: 50px 0 49px;
+	} */
+
+	.blog_img {
+		margin-bottom: 50px;
+	}
+
+	.blog-txt ul li {
+		margin-right: 0px;
+		border-right: none;
+	}
+
+	.blog-txt ul li {
+		padding-right: 8px;
+	}
+
+	#blog-filter .blog-txt a {
+		margin-bottom: 20px;
+	}
+
+	#blog-filter .blog-txt p {
+		font-size: 15px;
+		margin-bottom: 15px;
+	}
+
+	#blog-filter .blog-txt a {
+		font-size: 24px;
+	}
+
+	.pages ul li a {
+		height: 40px;
+		width: 40px;
+		line-height: 40px;
+	}
+
+	.pages ul li {
+		margin-right: 8px;
+	}
+
+	.z_right_text {
+		margin-bottom: 5px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             Blog part End
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             contact part Start
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* #Contact {
+		padding: 50px 0 50px;
+	} */
+
+	.contact-text h3 {
+		font-size: 35px;
+		line-height: 44px;
+	}
+
+
+
+	.Contact-box form input {
+		width: 59%;
+		height: 65px;
+	}
+
+	.Contact-box form button {
+		width: 41%;
+		height: 66px;
+	}
+
+	.Contact-box {
+		margin-top: 30px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             contact part End
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             office part start
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* #office {
+		padding: 50px 0 50px;
+	} */
+
+	.office-col i {
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		font-size: 20px;
+		margin-right: 7px;
+	}
+
+	.office-txt h4 {
+		font-size: 20px;
+		margin-bottom: 2px;
+	}
+
+	.office-col {
+		margin-bottom: 10px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+			   office part end
+  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             form part start
+   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* #form {
+		padding: 50px 0 27px;
+	} */
+
+	#googleMap {
+		width: 100%;
+		height: 400px;
+	}
+
+	.form-title h5 {
+		font-size: 36px;
+		margin-top: 16%;
+		margin-bottom: 15px;
+	}
+
+	.form-col .form-control {
+		padding: 0.375rem 1.75rem;
+	}
+
+	.form-col input {
+		width: 100%;
+		height: calc(2.5em + 0.2rem + 4px);
+	}
+
+	.form-col .form-btn {
+		padding: 8px 29px;
+		margin: 7px 37px;
+	}
+
+	.form-col {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+
+	.map {
+		margin: 0 -8px 40px -15px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+			   form part end
+  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             footer part Start
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+	.footer-logo {
+		padding: 25px 0;
+	}
+
+	.footer-mid {
+		padding: 15px 0 0 0;
+	}
+
+	.footer-left h4,
+	.footer-left2 h4,
+	.foot-img h4,
+	.foot-last h4 {
+		margin-bottom: 15px;
+	}
+
+	.footer-left2,
+	.foot-last {
+		padding-top: 15px;
+	}
+
+	.foot-img ul li {
+		width: 22.47%;
+	}
+
+	.footer-bottom {
+		font-size: 12px;
+	}
+
+	/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+             footer part End
+	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+}

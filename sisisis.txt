@@ -1,0 +1,34 @@
+/* RUTAS INICIO DE SESION */
+Route::post('login', function(){
+    $credentials = request()->only('email','password','tipo');
+
+    //Verificar si coinciden con las credenciales
+    if (Auth::attempt($credentials)){
+
+        //Evitar el robo de información
+        request()->session()->regenerate();
+
+        //Obtener el tipo de usuario
+        $userType = $credentials['tipo'];
+
+        //Redirigir a la vista correspondiente según el tipo de usuario
+        if ($userType === '1') {
+            return view('admin.admin');
+        } elseif ($userType === '2') {
+            return view('jugador.player');
+        } elseif ($userType === '3') {
+            return view('presidente.president');
+        } else {
+            return redirect('login');
+        }
+    }
+
+    return redirect('login');
+});
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+npm install
+npm i boostrap
+npm install sass
+php artisan ui vue --auth
+composer require laravel/ui
+        

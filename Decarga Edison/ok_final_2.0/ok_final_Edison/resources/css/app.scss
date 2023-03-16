@@ -1,0 +1,47 @@
+@import 'bootstrap/scss/bootstrap';
+//@import 'mdb-ui-kit/css/mdb.min.css';
+
+// Color of the links BEFORE scroll
+.navbar-scroll {
+  .nav-link, .fa-bars, .navbar-brand {
+    color: white;
+  }
+
+  .nav-link:hover {
+    color: red;
+  }
+}
+
+// Color of the links AFTER scroll
+.navbar-scrolled {
+  .nav-link, .fa-bars, .navbar-brand {
+    color: white;
+  }
+}
+
+// Color of the navbar AFTER scroll
+.navbar-scroll, .navbar-scrolled {
+  background-color: black;
+
+  &.navbar {
+    &-scroll, &-scrolled {
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
+  }
+}
+
+.fixed-tap {
+  position: none;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+
+}
+footer {
+ 
+  bottom: 0;
+  width: 100%;
+  margin-top: 50px;
+}
